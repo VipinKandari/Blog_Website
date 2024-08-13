@@ -267,7 +267,7 @@ def contact():
             connection.sendmail(from_addr=user_email,
                                 to_addrs="kandarivipin02@gmail.com",
                                 msg=f"Subject:Python Mail\n\nName: {name}\nEmail: {user_email}\nPhone: {phone}\nMessage: {message}")
-        return render_template("contact.html", form_filled=True)
+        return render_template("contact.html")
     return render_template("contact.html", current_user=current_user)
 
 
