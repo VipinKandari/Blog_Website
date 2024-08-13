@@ -29,7 +29,8 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         {{ ckeditor.load() }} 
-        render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+        {{ ckeditor.config(name='body') }} 
+        {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
       </div>
     </div>
   </div>
